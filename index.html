@@ -1,77 +1,35 @@
 <html>
-    <head>
-        <title>Hand gesture app</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    
-        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
-    
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
-      </head>
-      <body>
-<center>
-    <div id="tittle">
 
-        <h1>Hand gesture
-            <hr>
-            <span>&#9995;</span>
-  <span>&#9996;</span>
-  <span>&#9757;</span>
-  <span>&#9994;</span>
-  <span>&#128077;</span>
-  <span>&#128079;</span>
-  <span>&#128078;</span>
-  <span>&#128076;</span>
-  <span>&#128074;</span>
-  <span>&#129311;</span>
-  <br>
-  <br>
-        </h1>
-        
-    </div>
-    <h2>Take a selfie of a hand gesture to know what it means</h2>
-    <h3>In this website the model is traned to recognize:</h3>
-        <h1>
-            <span>&#128077;</span>
-            <span>&#129311;</span>
-            <span>&#9757;</span>
-            <span>&#128078;</span>
-        </h1>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-            <label> Webcam - </label>
-  
-          <br><br>
-  <div id="camera">
-  
-  </div>
-  <br>
-  <br>
-  <button class="btn btn-success" onclick="generate()">Generate</button>
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-  <label> Prediction 1</label>
-  <h2 id="emotion_name"></h2>
-  
-        </div>
-        <div class="col-md-4 col-sm-12 col-xs-12">
-            <label>Snapshot - </label>
-  <div id="Snapshot">
-  
-  </div>
-  <br>
-  <br>
-  <button class="btn btn-warning" onclick="check()">Identify emotion</button>
-          <br><br>
-        </div>
-    
-        
+<head>
+  <meta charset="UTF-8">
+  <title>Intro p5.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="main.js"></script>
+  <style type="text/css">
 
-  
-</center>
-      </body>
+  </style>
+  <title>Photo_frame</title>
+</head>
+<body>
+    <center>
+        <h1 id="header">P5 photo frame</h1>
+        <hr>
+        <hr>
+        <button class="btn btn-info"onclick="capture()">Capture</button>
+        <br>
+        <br>
+        <br>
+        <button class="btn btn-info"onclick="filter_img()">Filter</button>
+        <span>
+            <input id="choose_filter" type="text" placeholder="choose filter">
+        </span>
+    </center>
+    
+</body>
 </html>

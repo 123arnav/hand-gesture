@@ -1,26 +1,19 @@
+
+h1
+{
+  font-size: 45px !important;
+font-family: 'EB Garamond', serif;
+width: 100%;
+background-color: blue;
+height: 100;
+margin-top: 0%;
+margin-bottom: 0%;
+color: aqua;
+padding-top: 16;
+}
+canvas {
+    border: 2px solid black;
+}
 body{
-    background-color:darkblue;
-    color: lightblue;
-    font-family: 'EB Garamond', serif;
-    font-size: 20px;
-}
-#tittle{
-  background-color:lightblue; 
-  color: white;
-  width: 500px;
-  border-radius: 5px;
-}
-#snapshot{
-    width: 310px;
-    border-style: solid;
-    border-width: thick;
-    height: 300px;
-    border-color: lightblue;
-}
-#camera{
-    width: 310px;
-    border-style: solid;
-    border-width: thick;
-    height: 300px;
-    border-color: lightblue;
+    background-color: aqua;
 }
